@@ -1,3 +1,11 @@
+Q.1_Write a python code for converting integer values to Indian currency notations, without
+using the currency libraries
+Example:
+input: 504678
+output: 5,04,67
+________________________________________________________________________
+
+
 def convert_to_indian_currency(number):
     # Convert the number to a string for easier manipulation
     num_str = str(number)
