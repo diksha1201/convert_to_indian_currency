@@ -1,0 +1,22 @@
+convert_to_indian_currency function:
+
+It takes an integer number as input.
+Converts the integer to a string num_str for easier manipulation.
+Initializes variables like result to store the result string and count to keep track of the digits processed.
+The function uses a for loop to iterate over each digit of the number in reverse order (starting from the least significant digit).
+
+Inside the loop:
+
+Checks if count is equal to 2, which means two digits have been processed. If true, it adds a comma to the result string.
+Appends the current digit to the front of the result string.
+Increments the count variable.
+After the loop, it checks if there is a leading comma in the result string and removes it if present.
+
+The function returns the final formatted result.
+
+Example usage:
+
+Defines an input_number variable with the value 504678.
+Calls the convert_to_indian_currency function with input_number and stores the result in output_currency.
+Prints the input and output for demonstration.
+In the example, the input 504678 is converted to the Indian currency notation 5,04,67. The code achieves this by inserting commas after every two digits from the right.
