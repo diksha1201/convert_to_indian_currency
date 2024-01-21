@@ -38,3 +38,9 @@ input_number = 504678
 output_currency = convert_to_indian_currency(input_number)
 print(f"Input: {input_number}")
 print(f"Output: {output_currency}")
+
+
+
+OutPut =
+Input: 504678
+Output: 50,46,78
