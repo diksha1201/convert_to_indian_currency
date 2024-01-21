@@ -1,0 +1,32 @@
+def convert_to_indian_currency(number):
+    # Convert the number to a string for easier manipulation
+    num_str = str(number)
+
+    # Calculate the length of the number
+    length = len(num_str)
+
+    # Initialize variables for tracking the result
+    result = ''
+    count = 0
+
+    # Iterate over each digit in reverse order
+    for digit in reversed(num_str):
+        # Add a comma after every 2 digits
+        if count == 2:
+            result = ',' + result
+            count = 0
+        # Append the digit to the result
+        result = digit + result
+        count += 1
+
+    # Remove leading comma if present
+    if result and result[0] == ',':
+        result = result[1:]
+
+    return result
+
+# Example usage
+input_number = 504678
+output_currency = convert_to_indian_currency(input_number)
+print(f"Input: {input_number}")
+print(f"Output: {output_currency}")
